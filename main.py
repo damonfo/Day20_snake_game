@@ -1,7 +1,7 @@
 import time
-import turtle
-from turtle import Screen, Turtle
+from turtle import Screen
 from snake import Snake
+from food import Food
 
 # Screen setup
 screen = Screen()
@@ -12,6 +12,8 @@ screen.tracer(0)    # 关闭动画效果
 # Create a snake body
 
 snake = Snake()
+food = Food()
+
 screen.listen()
 screen.onkey(snake.up, "Up")
 screen.onkey(snake.down, "Down")
